@@ -38,7 +38,8 @@ var charizard = {
     function Pizza(sauce, cheese, toppings, size){
         this.sauce = sauce;
         this.cheese = cheese;
-        this.toppings = 
+        this.toppings = toppings;
         this.size = size;
-
     }
+
+    var pizza = new Pizza('tomato', 'mozzerella', ['pinapples', 'ham', 'bacon'], 'xxl');
