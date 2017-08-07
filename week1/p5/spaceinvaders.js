@@ -1,11 +1,11 @@
-    var x = 400; // player ship x coord
+var x = 400; // player ship x coord
 var y = 700; // player ship y coord
 var xE = 0; //alien ships
 var yE = 0; //alien ships
 var w = 10; // bullet width
 var h = 10; // bullet height
-var width = 50; // alien ships
-var height = 50; // alien ships
+var width = 30; // alien ships
+var height = 30; // alien ships
 
 //setup
 function setup(){
@@ -33,11 +33,11 @@ function alienShips(xE){
 };
 
 //alien ship objects
-var alienShip1 = new alienShips(xE + 10);
-var alienShip2 = new alienShips(xE + 170);
-var alienShip3 = new alienShips(xE + 330);
-var alienShip4 = new alienShips(xE + 490);
-var alienShip5 = new alienShips(xE +650);
+var alienShip1 = new alienShips(xE + 20);
+var alienShip2 = new alienShips(xE + 180);
+var alienShip3 = new alienShips(xE + 340);
+var alienShip4 = new alienShips(xE + 500);
+var alienShip5 = new alienShips(xE +640);
 
 // player
 function draw(){
@@ -59,7 +59,8 @@ rect(alienShip5.xE,alienShip5.yE,alienShip5.width,alienShip5.height);
 for(i = 0; i < bulletChamber.length; i++){
   rect(bulletChamber[i].x, bulletChamber[i].y, w, h);
   bulletChamber[i].y = bulletChamber[i].y-10; 
-}
+  if(Bullet.x + Bullet.width > alienArr.xE + alienArr.yE && Bullet.y - 10 < alienArr.yE + alienArr.height && Bullet.height + alienArr.y > alienArr.y){
+}else{clear(alienArr)}
  if (keyIsDown(LEFT_ARROW)) {
     x = x - 5;
   }
@@ -83,6 +84,7 @@ function keyPressed(){
          xE *=-1
          }
      }
-}  
+
+
 
   

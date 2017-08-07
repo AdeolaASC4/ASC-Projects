@@ -1,0 +1,11 @@
+.carousel-inner{
+    height: 55%;
+}
+
+.carousel-caption{
+    height: 100%;
+}
+
+.item{
+    height: 30%;
+}

@@ -1,0 +1,51 @@
+body{
+    width:100%;
+    background: #A2214B ;
+    margin: 0 auto;
+}
+
+.investor{
+    background: #00529F;
+    margin: 0 auto;
+}
+
+h2{
+    color: #EDBB00;
+    margin: 0%,50%,50%,50%;
+}
+p{
+    color:#EDBB00;
+}
+h1{
+    color: #EDBB00;
+}
+
+body{
+    text-align: center;
+    font-size: 120%;
+}
+
+img{
+    border: 8px dashed #EDBB00 ;
+}
+
+@media(max-width: 360px){
+    h1{
+        width: 50%;
+        background: green;
+    }
+}
+
+@media(max-width: 375px){
+    .hello{
+        width:80%;
+        color: blue;
+    }
+}
+
+@media(min-width: 768px){
+    body{
+        width: 100%;
+        background: palegreen;
+    }
+}
