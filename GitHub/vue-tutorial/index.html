@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Adeola is Amazing!</h1>
+    <div id="app">
+        {{message}}
+        <br> {{message2}}
+        <br>
+        <div id="app-2">
+            <span v-bind:title="message3">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+        </span>
+            <button v-onclick="showDiv()">Click Me!!</button>
+            <div v-if="seen">
+                Cisco is the best cohort {{students.lenght}}
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
